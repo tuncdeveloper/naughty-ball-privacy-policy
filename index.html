@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Ball Game</title>
+    <title>Privacy Policy - Balloop Fun</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +12,7 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
+            color: #333;
         }
         .container {
             background-color: white;
@@ -28,11 +29,17 @@
             color: #34495e;
             margin-top: 25px;
         }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
         .highlight {
             background-color: #fff3cd;
-            padding: 10px;
+            padding: 15px;
             border-left: 4px solid #ffc107;
             margin: 15px 0;
+            font-weight: bold;
         }
         .coppa-section {
             background-color: #e8f5e8;
@@ -40,11 +47,57 @@
             border-left: 4px solid #28a745;
             margin: 15px 0;
         }
+        .no-collect-warning {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            border: 1px solid #bee5eb;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+        }
         .contact-info {
             background-color: #e8f4fd;
             padding: 15px;
             border-radius: 5px;
             margin-top: 20px;
+        }
+        .game-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #6c757d;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .ratings-section {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 15px 0;
+        }
+        .ratings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .rating-item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .rating-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        .rating-value {
+            color: #3498db;
+            font-weight: bold;
+            margin-top: 5px;
         }
         ul {
             padding-left: 20px;
@@ -57,34 +110,64 @@
             margin-top: 30px;
             font-style: italic;
             color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
-        .warning {
-            background-color: #f8d7da;
-            color: #721c24;
-            padding: 15px;
-            border: 1px solid #f5c6cb;
-            border-radius: 5px;
-            margin: 15px 0;
+        .important-text {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .safe-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .ratings-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy - Balloop Fun</h1>
         <p><strong>Last Updated:</strong> September 2025</p>
-        <p>This privacy policy applies to our mobile ball game and explains how we handle user data.</p>
+        
+        <div class="game-info">
+            <strong>About Balloop Fun:</strong> Bounce the ball to pop balloon targets across multiple levels with obstacles that require trajectory planning. Features combo multipliers, star ratings, power-ups, and completely offline gameplay.
+        </div>
+        
+        <p>This privacy policy applies to the "Balloop Fun" mobile game application and explains how we handle user data.</p>
         
         <h2>1. Information We Collect</h2>
-        <div class="highlight">
-            <strong>We DO NOT collect any personal information from users of any age.</strong>
+        
+        <div class="no-collect-warning">
+            WE DO NOT COLLECT ANY PERSONAL INFORMATION FROM USERS OF ANY AGE.
         </div>
+        
         <p>Our game stores the following data locally on your device only:</p>
         <ul>
             <li>Game scores and level progress</li>
+            <li>Level completion status and star ratings</li>
+            <li>Combo multipliers and high scores</li>
             <li>Game settings and sound preferences</li>
-            <li>Level completion status</li>
+            <li>Power-up usage preferences</li>
         </ul>
-        <p><strong>We DO NOT collect, transmit, or access:</strong></p>
+        
+        <div class="highlight">
+            <p class="important-text">WE DO NOT COLLECT, TRANSMIT, OR ACCESS:</p>
+        </div>
         <ul>
             <li>Personal information (names, emails, phone numbers)</li>
             <li>Location data or GPS coordinates</li>
@@ -97,7 +180,7 @@
 
         <h2>2. Children's Privacy (COPPA Compliance)</h2>
         <div class="coppa-section">
-            <p><strong>This app is designed for children aged 3 and above and fully complies with the Children's Online Privacy Protection Act (COPPA).</strong></p>
+            <p><strong>This app is designed for children aged 3 and above and fully complies with the Children's Online Privacy Protection Act (COPPA).</strong><span class="safe-badge">FAMILY SAFE</span></p>
             
             <h3>For Children Under 13:</h3>
             <ul>
@@ -138,10 +221,48 @@
         <h2>7. Third-Party Services</h2>
         <p>This game does not integrate with any third-party services, advertising networks, or analytics platforms. The game operates completely offline.</p>
 
-        <h2>8. Policy Changes</h2>
+        <h2>8. Age Rating Compliance</h2>
+        <div class="ratings-section">
+            <p><strong>Balloop Fun has received the following age ratings from international rating authorities:</strong></p>
+            
+            <div class="ratings-grid">
+                <div class="rating-item">
+                    <div class="rating-name">ESRB (North America)</div>
+                    <div class="rating-value">Everyone</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">PEGI (Europe)</div>
+                    <div class="rating-value">3+</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">USK (Germany)</div>
+                    <div class="rating-value">All Ages</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">GRAC (South Korea)</div>
+                    <div class="rating-value">All Ages</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">IARC Generic</div>
+                    <div class="rating-value">3+</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">ACB (Australia)</div>
+                    <div class="rating-value">General</div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-name">ClassInd (Brazil)</div>
+                    <div class="rating-value">All Ages</div>
+                </div>
+            </div>
+            
+            <p>The game content is completely family-friendly with no violence, profanity, or inappropriate content.</p>
+        </div>
+
+        <h2>9. Policy Changes</h2>
         <p>We may update this privacy policy from time to time. Any changes will be posted here with an updated revision date.</p>
 
-        <h2>9. Contact Us</h2>
+        <h2>10. Contact Us</h2>
         <div class="contact-info">
             <p>For questions about this privacy policy or COPPA compliance:</p>
             <p><strong>Email:</strong> ferhattunc0065@gmail.com</p>
@@ -149,6 +270,8 @@
         </div>
 
         <div class="footer">
+            <p><strong>Balloop Fun - Safe, Family-Friendly Gaming</strong></p>
+            <p>No data collection | Completely offline | COPPA compliant</p>
             <p>This privacy policy ensures full compliance with COPPA and Google Play Families Policy requirements.</p>
         </div>
     </div>
